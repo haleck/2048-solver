@@ -16,7 +16,7 @@ class MoveLeftTest(TestCase):
             [8, 2, 4, 0],
             [8, 4, 0, 0]
         ]
-        self.assertEqual(move_left(arr), rez)
+        self.assertEqual(move_left(arr), (rez, 24))
 
     def test_move_left_2(self):
         arr = [
@@ -31,7 +31,7 @@ class MoveLeftTest(TestCase):
             [2, 0, 0, 0],
             [2, 8, 0, 0]
         ]
-        self.assertEqual(move_left(arr), rez)
+        self.assertEqual(move_left(arr), (rez, 16))
 
     def test_move_left_3(self):
         arr = [
@@ -46,7 +46,7 @@ class MoveLeftTest(TestCase):
             [4, 4, 0, 0],
             [8, 4, 2, 0]
         ]
-        self.assertEqual(move_left(arr), rez)
+        self.assertEqual(move_left(arr), (rez, 24))
 
     def test_move_left_4(self):
         arr = [
@@ -61,7 +61,7 @@ class MoveLeftTest(TestCase):
             [2, 16, 2, 0],
             [0, 0, 0, 0]
         ]
-        self.assertEqual(move_left(arr), rez)
+        self.assertEqual(move_left(arr), (rez, 92))
 
 
 if __name__ == "__main__":
